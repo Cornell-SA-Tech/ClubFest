@@ -3269,7 +3269,8 @@
 		}
 
 		.wrapper.style3 {
-			background-color: #b74e91;
+			background-color:#d6d6ad;
+            color: #4c4c4c;
 		}
 
 		.wrapper.style3-alt {
@@ -3534,7 +3535,7 @@
 
 	#sidebar {
 		padding: 1.4em 2em 0em 2em ;
-		background: #312450;
+		background: #4c4c4c;
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3891,6 +3892,7 @@
 
 	#intro {
 		background-attachment: fixed;
+        background-color: #b31b1b;
 		background-image: url("images/intro.svg");
 		background-position: top right;
 		background-repeat: no-repeat;

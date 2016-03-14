@@ -3253,7 +3253,7 @@
 		}
 
 		.wrapper.style1 {
-			background-color: #5e42a6;
+			background-color:  #b31b1b;
 		}
 
 		.wrapper.style1-alt {
@@ -3892,7 +3892,6 @@
 
 	#intro {
 		background-attachment: fixed;
-        background-color: #b31b1b;
 		background-image: url("images/intro.svg");
 		background-position: top right;
 		background-repeat: no-repeat;

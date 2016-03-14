@@ -2054,7 +2054,7 @@
 		border-radius: 0.25em;
 		border: solid 1px rgba(255, 255, 255, 0.15);
 		background: rgba(255, 255, 255, 0.05);
-		margin: 0 0 2em 0;
+		margin: 0 0 1em 0;
 	}
 
 		.features section {
@@ -3533,7 +3533,7 @@
 /* Sidebar */
 
 	#sidebar {
-		padding: 2.5em 2.5em 0.5em 2.5em ;
+		padding: 1.4em 2em 0em 2em ;
 		background: #312450;
 		cursor: default;
 		height: 100vh;
@@ -3752,14 +3752,18 @@
 			font-size: 0.6em;
 			font-weight: bold;
 			letter-spacing: 0.25em;
-			line-height: 1.75;
+			line-height: 1em;
 			outline: 0;
 			padding: 1.35em 0;
 			position: relative;
 			text-decoration: none;
 			text-transform: uppercase;
 		}
-
+        #sidebar nav span {
+            letter-spacing: 2em;
+            font-size: 1em;
+    
+        } 
 			#sidebar nav a:before, #sidebar nav a:after {
 				border-radius: 0.2em;
 				bottom: 0;
@@ -3869,6 +3873,9 @@
 							background-image: none;
 							background-color: #b74e91;
 						}
+            #sidebar span {
+                vertical-align: middle !important;
+            }
 
 		}
 

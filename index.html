@@ -21,10 +21,16 @@
 				<div class="inner">
 					<nav>
 						<ul>
-							<li><a href="#intro">Welcome</a></li>
-							<li><a href="#one">Who we are</a></li>
-							<li><a href="#two">What we do</a></li>
-							<li><a href="#three">Get in touch</a></li>
+							<li><a class='category'><span class="icon fa-key"></span> Community Service</a></li>
+							<li><a class='category'><span class='icon fa-globe'></span> Religion</a></li>
+							<li><a class='category'><span class="icon fa-ticket"></span> Performing Arts</a></li>
+							<li><a class='category'><span class="icon fa-university"></span> Social Change</a></li>
+                            <li><a class='category'><span class="icon fa-newspaper-o"></span> Event Planning and Publications</a></li>
+							<li><a class='category'><span class="icon fa-briefcase"></span> Business/Career</a></li>
+							<li><a class='category'><span class="icon  fa-language"></span> Cultural</a></li>
+							<li><a class='category'><span class="icon fa-star-half-o"></span> Special Interest</a></li>
+                            <li><a><span class="icon fa-flask"></span> Science/Technology</a></li>
+                            
 						</ul>
 					</nav>
 				</div>
@@ -39,17 +45,7 @@
 							<h1>Clubfest Cornell</h1>
 							<p>Your Go-To Guide for Student Organizations at Cornell</p>
 							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Science/Technology</a></li>
-                                <li><a href="#one" class="button scrolly">Community Service</a></li>
-                                <li><a href="#one" class="button scrolly">Religion</a></li>
-                                <li><a href="#one" class="button scrolly">Performing Arts</a></li>
-                                <li><a href="#one" class="button scrolly">Learn more</a></li>
-                                <li><a href="#one" class="button scrolly">Social Change</a></li>
-                                <li><a href="#one" class="button scrolly">Event Planning/Publications</a></li>
-                                <li><a href="#one" class="button scrolly">Business/ Career</a></li>
-                                <li><a href="#one" class="button scrolly">Cultural</a></li>
-                                <li><a href="#one" class="button scrolly">Special Interest</a></li>
-    
+                                <!--<li><a href="#one" class="button scrolly">Science/Technology</a></li>-->
 							</ul>
 						</div>
 					</section>
@@ -172,6 +168,14 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+            <script> 
+            $(".category").on("click", function() {
+                if ($(".active")[0]) {
+                    $(".active").removeClass("active");
+                }
+                $(this).addClass("active");
+            });
+            </script>
 
 	</body>
 </html>

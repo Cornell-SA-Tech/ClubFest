@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="SA WedDev Clubfest">
+
+    <title>Clubfest Cornell</title>
+    
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+<body>
+    
+    <!--navigation-->
+    <nav>
+        <ul>
+            <li><a>one</a></li>
+            <li><a id="clubs">two</a></li>
+            <div id="subnav">
+                <ul>
+                    <li>ten</li>
+                    <li>eleven</li>
+                </ul>
+            </div>
+            <li><a>three</a></li>
+            <li><a>four</a></li>
+        </ul>
+    </nav>
+    
+    <footer>
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Copyright &copy; Your Website 2014</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+     //Hide subnav until user clicks the clubs element
+        $("#subnav").hide();
+            
+        //show form on click
+        $("#clubs").on("click", function() {
+            $("#subnav").slideToggle(); 
+        });
+        
+        //highlight clicked elements of the nav
+        $(".category").on("click", function() {
+                if ($(".active")[0]) {
+                    $(".active").removeClass("active");
+                }
+                $(this).addClass("active");
+            });
+    </script>
+</body>
+
+</html>

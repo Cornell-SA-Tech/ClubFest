@@ -1,4 +1,8 @@
-@import url(font-awesome.min.css);
+/*@import url(font-awesome.min.css); */
+@font-face {
+    font-family: palatino;
+    src: url('../fonts/pala.ttf');
+}
 
 /*
 	Hyperspace by HTML5 UP
@@ -13,7 +17,7 @@
 		padding: 0;
 		border: 0;
 		font-size: 100%;
-		font: inherit;
+		font-family: palatio;
 		vertical-align: baseline;
 	}
 
@@ -3592,10 +3596,11 @@
 				-webkit-transition: opacity 0.15s ease, -webkit-transform 0.75s ease;
 				-ms-transition: opacity 0.15s ease, -ms-transform 0.75s ease;
 				transition: opacity 0.15s ease, transform 0.75s ease;
-				margin: 1.5em 0 0 0;
+				margin: 1.2em 0 0 0;
 				opacity: 1;
 				padding: 0;
 				position: relative;
+                text-align: left;
 			}
 
 				#sidebar nav > ul > li:first-child {
@@ -3749,16 +3754,15 @@
 			transition: color 0.2s ease;
 			border: 0;
 			color: rgba(255, 255, 255, 0.35);
-			display: block;
-			font-size: 0.6em;
+			font-size: 0.76em;
 			font-weight: bold;
-			letter-spacing: 0.25em;
-			line-height: 1.1em;
+			letter-spacing: 0.15em;
+			line-height: 1.7em;
 			outline: 0;
-			padding: 1.35em 0;
+			padding: 1.35em;
 			position: relative;
 			text-decoration: none;
-			text-transform: uppercase;
+            width:100%;
 		}
         #sidebar nav span {
             letter-spacing: 2em;
@@ -3773,10 +3777,6 @@
 				position: absolute;
 				right: 0;
 				width: 100%;
-			}
-
-			#sidebar nav a:before {
-				background: #3c2c62;
 			}
 
 			#sidebar nav a:after {
@@ -3797,6 +3797,7 @@
 
 			#sidebar nav a.active {
 				color: #ffffff;
+                width: 100%;
 			}
 
 				#sidebar nav a.active:after {

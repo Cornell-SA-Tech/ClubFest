@@ -1,0 +1,116 @@
+<?php session_start(); ?>
+<!doctype html> 
+<html> 
+<head> 
+    <meta charset="UTF-8">
+    <title>CLUBFEST</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+</head>
+
+<body>
+<!--- uncomment for php login> 
+require_once 'config.php';
+$mysqli = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+$Uuid = filter_input(INPUT_POST, 'uid', FILTER_SANITIZE_STRING);
+$Upw = filter_input(INPUT_POST, 'pw', FILTER_SANITIZE_STRING);
+$result = $mysqli->query("SELECT * FROM admin WHERE uId = '$Uuid'");
+	$row = $result->fetch_assoc();
+	$dbhash = $row['hashPw'];
+	$dbuser = $row['uId'];
+	if( password_verify($Upw, $dbhash)){
+		$_SESSION['active'] = $dbuser;
+		}
+?> -->
+
+<nav class="nav">
+<img src='logo.png' title='Cornell Clubfest' alt='Cornell Clubfest'>
+<form method='POST' name='search'>Search<input type='text'></form> 
+<ul>
+<li><a href='index.html' title='ABOUT'>ABOUT</a></li>
+<li><a href='clubs.html' class='active' title='CLUBS'>CLUBS</a></li>
+<!---should be looped from SQL if they want to change the categories, but hardcoding here for mockup-->
+<form method='POST' id='catergories'>
+Community Service<input type="checkbox" name="cat" value="community"><br>
+Religion<input type="checkbox" name="cat" value="religion"><br>
+Social Change<input type="checkbox" name="cat" value="social"><br>
+Performing Arts<input type="checkbox" name="cat" value="performing"><br>
+Event Planning/Publication<input type="checkbox" name="cat" value="event"><br>
+Buisiness/Career<input type="checkbox" name="cat" value="buisiness"><br>
+Cultural<input type="checkbox" name="cat" value="cultural"><br>
+Special Interest<input type="checkbox" name="cat" value="special"><br>
+Science/Technology<input type="checkbox" name="cat" value="science"><br>
+</form>
+<li><a href='contact.html' title='CONTACT'>CONTACT</a></li>
+</ul>
+</nav>
+<div id="content" class="clubs2">
+        <table>
+            <tr> 
+                <td>
+                    <img id="image" src="images/test.jpg">
+                    <p>Women in Cornell Computing</p>
+                    <div class="connect">
+                        <i class="fa fa-facebook-square" aria-hidden="true" href=""></i>
+
+                        <i class="fa fa-envelope" aria-hidden="true" href=""></i>
+                        <i class="fa fa-desktop" aria-hidden="true" href=""></i>
+                    </div>
+                </td>
+                <td>
+                    <img id="image" src="images/boi.jpg">
+                    <p>Dat Boi Club </p>
+                    <div class="connect">
+                        <i class="fa fa-facebook-square" aria-hidden="true" href=""></i>
+
+                        <i class="fa fa-envelope" aria-hidden="true" href=""></i>
+                        <i class="fa fa-desktop" aria-hidden="true" href=""></i>
+                    </div>
+                </td>
+                <td>
+                    <img id="image" src="images/campus.jpg">
+                    <p id="info"> Cornell University Student Club</p>
+                    <div class="connect">
+                        <i class="fa fa-facebook-square" aria-hidden="true" href=""></i>
+
+                        <i class="fa fa-envelope" aria-hidden="true" href=""></i>
+                        <i class="fa fa-desktop" aria-hidden="true" href=""></i>
+                    </div>
+                </td>
+            </tr>
+            <tr> 
+                <td>
+                    <img id="image" src="images/george.jpg">
+                    <p>George Costanza Club</p>
+                    <div class="connect">
+                        <i class="fa fa-facebook-square" aria-hidden="true" href=""></i>
+
+                        <i class="fa fa-envelope" aria-hidden="true" href=""></i>
+                        <i class="fa fa-desktop" aria-hidden="true" href=""></i>
+                    </div>
+                </td>
+                <td>
+                    <img id="image" src="images/ski.jpg">
+                    <p>Down Slope Club</p>
+                    <div class="connect">
+                        <i class="fa fa-facebook-square" aria-hidden="true" href=""></i>
+
+                        <i class="fa fa-envelope" aria-hidden="true" href=""></i>
+                        <i class="fa fa-desktop" aria-hidden="true" href=""></i>
+                    </div>
+                </td>
+                <td>
+                    <img id="image" src="images/broc.jpg">
+                    <p id="info">1 Brocolli</p>
+                    <div class="connect">
+                        <i class="fa fa-facebook-square" aria-hidden="true" href=""></i>
+
+                        <i class="fa fa-envelope" aria-hidden="true" href=""></i>
+                        <i class="fa fa-desktop" aria-hidden="true" href=""></i>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

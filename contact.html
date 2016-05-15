@@ -1,4 +1,4 @@
-<!--<?php session_start(); ?>-->
+<?php session_start(); ?>
 <!doctype html> 
 <html> 
 <head> 
@@ -23,13 +23,14 @@ $result = $mysqli->query("SELECT * FROM admin WHERE uId = '$Uuid'");
 ?> -->
 
 <nav class="nav">
-    <img src='logo.png' title='Cornell Clubfest' alt='Cornell Clubfest'>
-    <form method='POST' id= 'search' name='search'>Search<input type='text'></form> 
-    <ul>
-        <li><a href='index.html' class='active' title='ABOUT'>ABOUT</a></li>
-        <li><a href='clubs.html' title='CLUBS'>CLUBS</a></li>
-        <li><a href='contact.html' title='CONTACT'>CONTACT</a></li>
-    </ul>
+<img src='logo.png' title='Cornell Clubfest' alt='Cornell Clubfest'>
+<form method='POST' id= 'search' name='search'>Search<input type='text'></form> 
+<ul>
+<li><a href='index.html' class='active' title='ABOUT'>ABOUT</a></li>
+<li><a href='clubs.html' title='CLUBS'>CLUBS</a></li>
+<li><a href='contact.html' title='CONTACT'>CONTACT</a></li>
+</ul>
 </nav>
+
 </body>
 </html>

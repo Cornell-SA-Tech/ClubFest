@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
+@keyframes fade {
+	0% {opacity: 0;}
+	100%{opacity: 1;}
+}
+
+body {
+	font-family: 'Oswald', sans-serif;
+}
+
+.nav {
+	padding-right: 2%;
+	position: fixed;
+	font-size: 200%;
+	line-height: 200%;
+	left: 0px;
+	top: 0px;
+	color: white;
+	text-align: right;
+	width: 20%;
+	min-width: 300px;
+	background-color: #C41230;
+	height: 100%;
+}
+
+#catergories {
+	font-size: 49%;
+	line-height: 70%;
+	animation: fade;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+}
+
+input[type=text] {
+	width: 90%;
+}
+
+input[type=checkbox] {
+	opacity: 0.3;
+	}
+
+.active {
+	font-weight: 700;
+	text-decoration:underline;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	list-style-type: none;
+	}
+#content {
+    width: 75.5%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    float: right;
+    background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.1), 
+      rgba(255, 255, 255, 0.1)
+    ),
+    /* bottom, image */
+    url("images/cornell1.jpg");
+    background-size: cover;
+}
+.clubs2 table {
+    padding: .75%;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+.clubs2 tr {
+    padding-right: 1%;
+    width: 100%;
+    height: 327px;
+}
+.clubs2 td {
+    margin: 0%;
+    padding: 1%;
+    text-align: center;
+    vertical-align: top;
+    width: 33%;
+    background-color: rgba(255,255,255, .6);
+}
+.clubs2 img {
+    height: 248px;
+}
+.connect {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}

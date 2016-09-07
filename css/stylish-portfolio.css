@@ -228,16 +228,19 @@ hr.small {
 
 .call-to-action {
     padding: 50px 0;
+    background-color: #333333;
 }
 
 .call-to-action .btn {
     margin: 10px;
+    background-color: #333333;
 }
 
 /* Map */
 
 .map {
-    height: 500px;
+    padding: 50px 0
+    /*height: 500px */
 }
 
 @media(max-width:768px) {

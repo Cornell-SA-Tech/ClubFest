@@ -55,10 +55,29 @@
             
             //create basic club template
             $strClubs = 
-                "<div class='col-md-3 portfolio-item' data-club='" . $club['id'] . "'>
-                    <img class='img-responsive' src='" . $imgSource. "'>
-                    <h3>" . $club['name'] . "</h3>
+                "<div class='col-md-3 portfolio-item' id='club" . $club['id'] . "'>
+                    <a href='#club" . $club['id'] . "'><img class='img-responsive' src='" . $imgSource. "'></a>
+                    <a href='#club" . $club['id'] . "'><h3>" . $club['name'] . "</h3></a>
                 </div>";
+
+            //create fancybox to show on click 
+            $strClubs .= "<div style='display:none'>
+                            <div id='club" . $club['id'] . "'>
+                                <div class='row'>
+                                    <div class='col-sm-12' portfolio-item'>
+                                        <img class='img-responsive' src='" . $imgSource. "'>
+                                        <h3>" . $club['name'] . "</h3>
+                                        <p>" . $club['description'] . "</p>
+                                    </div>
+                                    <div class='col-sm-12'>
+                                        <div class='col-sm-4'><a href='" . $club['website'] . "'><i class='fa fa-globe' aria-hidden='true'></i></a></div>
+                                        <div class='col-sm-4'><i class='fa fa-envelope' aria-hidden='true'></i>" . $club['listserv_email'] . "></div>
+                                        <div class='col-sm-4'><a href='" . $club['fb_url'] . "'><i class='fa fa-facebook-square' aria-hidden='true'></a></i></div>
+                                        <div class='col-sm-4'></div>
+                                    </div>
+                                 </div>
+                            </div>
+                          </div>";
 
             //close row 
             if ($i % 4==0) {

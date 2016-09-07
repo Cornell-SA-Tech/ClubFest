@@ -55,16 +55,15 @@
             
             //create basic club template
             $strClubs = 
-                "<div class='col-md-4 portfolio-item'>
+                "<div class='col-md-3 portfolio-item' data-club='" . $club['id'] . "'>
                     <img class='img-responsive' src='" . $imgSource. "'>
                     <h3>" . $club['name'] . "</h3>
-                    <p>" . $club['description'] . "</p>
                 </div>";
 
             //close row 
-            if ($i % 3==0) {
+            if ($i % 4==0) {
                 $strClubs .= "</div>
-                              <div class='row' data-row='" . ($i % 3) . "'>";
+                              <div class='row' data-row='" . ($i % 4) . "'>";
             }
 
             $i++;

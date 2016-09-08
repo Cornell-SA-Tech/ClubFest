@@ -22,7 +22,7 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!--Searchbar CSS -->
-    <link href="searchbar.css" rel="stylesheet">
+    <link href="css/searchbar.css" rel="stylesheet">
 
     <link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
 
@@ -63,15 +63,82 @@
 </head>
 
 <body>
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top" onclick=$("#menu-close").click();>Cornell ClubFest 2016</a>
+            </li>
+            <li>
+                <a href="#top" onclick=$("#menu-close").click();>Home</a>
+            </li>
+            <li>
+                <a href="#about" onclick=$("#menu-close").click();>About</a>
+            </li>
+            <li>
+                <a href="#map" onclick=$("#menu-close").click();>Map</a>
+            </li>
+            <li>
+                <a href="#Clubs" onclick=$("#menu-close").click();>Clubs</a>
+            </li>
+            <li>
+                <a href="#schedule" onclick=$("#menu-close").click();>Schedule</a>
+            </li>
+            <li>
+                <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
+            </li>
 
+        </ul>
+    </nav>
 
-    <!-- Call to Action -->
-   <aside class="call-to-action bg-primary">
+     <!-- Header -->
+    <header id="top" class="header overlay" >
+        <div class="text-vertical-center">
+            <h1>Cornell ClubFest 2016</h1>
+            <h3> A celebration of student organizations </h3>
+            <!--<h3>Free Bootstrap Themes &amp; Templates</h3>-->
+            <br>
+            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="map">
+        <div class="container">
+            <div class="row">
+              <div class = "col-md-6">
+                <div class="embed-responsive embed-responsive-4by3">
+                  <iframe width=500 height=400 frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2944.1575211014783!2d-76.47834428501383!3d42.44566443768461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d081f45bdd012f%3A0x24feefb60669937e!2sBartels+Hall!5e0!3m2!1sen!2sus!4v1473191654673"></iframe>
+                </div>
+              </div>
+              <div class="col-md-6 text-left">
+                  <h3>Bartels Hall | Sunday, September 11th, 2016 | 1-4 PM </h3>
+                  <p align="left"> A celebration of Cornell's amazing student groups!
+                    Now in its thirteenth year, ClubFest showcases over 300 registered student organizations
+                    on campus. The event includes performances by several student groups.
+                    Come experience the incredible variety of interests and opportunities available
+                    through the organizations represented.</p>
+
+                  <p class="lead" align="left">
+                    This year's ClubFest will be held on Sunday, Sept 11th, 2016 from 1:00-4:00pm in Bartels Hall.
+                    Sponsored by Welcome Weekend and funded in part by the student activity fee.
+                    Note: People may want to bring their own water bottles</p>
+              </div>
+            </div>
+            <!-- /.row -->
+          </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Clubs-->
+   <section id="Clubs" class="clubs">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                   <!-- Page Content -->
-                  <div class="container">
+                   <div class="container">
 
                       <!-- Page Header -->
                       <div class="row">
@@ -107,15 +174,49 @@
                               <!--fill with ajax results-->
                           </div>
 
-                              <hr>
-                          </div>
+                          <hr>
+                      </div>
 
                           
-                          <div class='clearfix'></div>
-                      </div>
+                      <div class='clearfix'></div>
+                  </div>
+              </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Cornell Clubfest 2016</strong>
+                    </h4>
+                    <ul class="list-unstyled">
+                <!--        <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">name@example.com</a>
+                        </li>
+                      -->
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="https://www.facebook.com/CornellWelcomeWeekend/?hc_location=ufi"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://orgsync.rso.cornell.edu/org/welcomeweekend/home"><i class="fa fa-globe fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="cornellsatech@gmail.com"><i class="fa fa-envelope fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; www.clubfest.org</p>
                 </div>
             </div>
         </div>
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+    </footer>
 
     
 
@@ -231,7 +332,7 @@
                         "<div class='col-md-3 portfolio-item'><a class='fancybox'  href='#club" + clubs[i].id + "'><img class='img-responsive' src='" + imgSource + "'></a><a class='fancybox' href='#club" + clubs[i].id + "'><h3>" + clubs[i].name+ "</h3></a></div>";
 
             //      //create fancybox to show on click 
-                    $strClubs += "<div style='display:none'><div id='club" + clubs[i].id  + "'><div class='row'><div class='col-sm-12' portfolio-item'><img class='img-responsive' src='" + imgSource + "'><h3>" + clubs[i].name + "</h3><p>" + clubs[i].description + "</p></div><div class='col-sm-12' style='text-align:center;'><div class='col-sm-4'><a href='" + clubs[i].website + "'><i class='fa fa-globe fa-2x' aria-hidden='true'></i></a></div><div class='col-sm-4'><i class='fa fa-envelope fa-2x' aria-hidden='true'></i>  " + clubs[i].listserv_email + "</div><div class='col-sm-4'><a href='" + clubs[i].fb_url + "'><i class='fa fa-facebook-square fa-2x' aria-hidden='true'></a></i></div><div class='col-sm-4'></div></div></div></div></div>";
+                    $strClubs += "<div style='display:none'><div id='club" + clubs[i].id  + "'><div class='row addMargin'><div class='col-sm-7 portfolio-item' align='center'><img class='img-responsive' src='" + imgSource + "'></div><div class='col-sm-5' style='text-align:center;'><div class='row'><h3 class='bigTexth3' align='left'>" + clubs[i].name + "</h3><p class='bigText' align='left'>" + clubs[i].description + "</p></div><div class='col-sm-4'><a target='_blank' href='" + clubs[i].website_url + "'><i class='fa fa-globe fa-2x' aria-hidden='true'></i></a></div><div class='col-sm-4'><div class='col-sm-12'><a href='mailto:"+  clubs[i].listserv_email+"'><i class='fa fa-envelope fa-2x' aria-hidden='true'></i></a></div><div class='col-sm-12'>  " + clubs[i].listserv_email + "</div></div><div class='col-sm-4'><a  target='_blank' href='" + clubs[i].fb_url + "'><i class='fa fa-facebook-square fa-2x' aria-hidden='true'></i></a></div></div></div></div></div>";
             
                     //close row 
                     if ((i+1) % 4 == 0) {

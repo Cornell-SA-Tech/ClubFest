@@ -224,16 +224,17 @@ hr.small {
     opacity: 0.8;
 }
 
-/* Call to Action */
+/*Clubs*/
 
 .clubs {
     padding: 50px 0;
     background-color: #333333;
+    color: #fff;
 }
 
 .call-to-action .btn {
     margin: 10px;
-    background-color: #333333;
+    background-color: #FFFFFF;
 }
 
 /* Map */

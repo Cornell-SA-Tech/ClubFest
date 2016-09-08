@@ -1,21 +1,3 @@
-<?php 
-    //connect to db
-    $db_host = "https://clubfest-1865.rhcloud.com";
-    $db_user = "adminGgC8Pta"; 
-    $db_pass = "lh8blRAZ6NMC";
-    $db_name = "clubfest";
-
-    /*$mysqli = new mysqli($db_host, $db_user, $db_pass, $db_name);*/
-
-    //display companies that satisfy query
-    if (mysqli_connect_errno()) {
-        die("Connection failed. The following error message was recieved: " . mysqli_connect_error() ." Please try again.");
-    }
-                
-    //$result = $mysqli->query("SELECT * FROM company_info WHERE status=1 ORDER BY RAND()");
-    //$result2 = $mysqli->query("SELECT * FROM company_info WHERE closed=1 ORDER BY RAND()");
-    //var_dump($result2);
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Stylish Portfolio - Start Bootstrap Theme</title>
+    <title>Cornell Fall ClubFest 2016</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -242,7 +224,7 @@
                     $input = ["ffffff", "ccccff", "ffccff", "b3ffe6", "ffccb3", "ffe066"];
                     $rand = Math.floor(Math.random() * $input.length);
 
-                    var imgSource = clubs[i].image_url=='' ? "http://dummyimage.com/" + $input[$rand] + "700x400&text=" + clubs[i].name : clubs[i].image_url;
+                    var imgSource = clubs[i].image_url=='' ? "http://dummyimage.com/700x400/" + $input[$rand] + "/000/png/&text=" + clubs[i].name : clubs[i].image_url;
     
             //      //create basic club template
                     $strClubs = $strClubs +

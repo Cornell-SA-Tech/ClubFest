@@ -1,7 +1,7 @@
 <?php
     
     //connect to db
-    $db_host = "";
+    $db_host = "http://clubfest-1865.rhcloud.com/search.php";
     $db_user = "adminGgC8Pta"; 
     $db_pass = "lh8blRAZ6NMC";
     $db_name = "clubfest";

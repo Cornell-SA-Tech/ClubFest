@@ -94,283 +94,14 @@
                           </div>
                           <div id='results'>
                               <!--fill with ajax results-->
-                              <?php
-                                //print the clubs 
-                               ?>
                           </div>
 
-                          <!--display on load-->
-                          <div class='open'>
-                              <div class='row'>
-                                  <div class="col-md-4 portfolio-item">
-                                      <a href="#">
-                                          <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-                                      </a>
-                                      <h3>
-                                          <a href="#">Project Name</a>
-                                      </h3>
-                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                                  </div>
-                                  <div class="col-md-4 portfolio-item">
-                                      <a href="#">
-                                          <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-                                      </a>
-                                      <h3>
-                                          <a href="#">Project Name</a>
-                                      </h3>
-                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                                  </div>
-                                  <div class="col-md-4 portfolio-item">
-                                      <a href="#">
-                                          <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-                                      </a>
-                                      <h3>
-                                          <a href="#">Project Name</a>
-                                      </h3>
-                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                                  </div>
-                              </div>
-                              <!-- /.row -->
-
-                              <!-- Projects Row -->
-                              <div class="row">
-                                  <div class="col-md-4 portfolio-item">
-                                      <a class='img' href="#">
-                                          <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-                                      </a>
-                                      <h3>
-                                          <a href="#">Project Name</a>
-                                      </h3>
-                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                                  </div>
-                                  <div class="col-md-4 portfolio-item">
-                                      <a href="#">
-                                          <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-                                      </a>
-                                      <h3>
-                                          <a href="#">Project Name</a>
-                                      </h3>
-                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                                  </div>
-                                  <div class="col-md-4 portfolio-item">
-                                      <a href="#">
-                                          <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-                                      </a>
-                                      <h3>
-                                          <a href="#">Project Name</a>
-                                      </h3>
-                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                                  </div>
-                              </div>
-
-                              <!-- Projects Row -->
-                              <div class="row">
-                                  <div class="col-md-4 portfolio-item">
-                                      <a href="#">
-                                          <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-                                      </a>
-                                      <h3>
-                                          <a href="#">Project Name</a>
-                                      </h3>
-                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                                  </div>
-                                  <div class="col-md-4 portfolio-item">
-                                      <a href="#">
-                                          <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-                                      </a>
-                                      <h3>
-                                          <a href="#">Project Name</a>
-                                      </h3>
-                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                                  </div>
-                                  <div class="col-md-4 portfolio-item">
-                                      <a href="#">
-                                          <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-                                      </a>
-                                      <h3>
-                                          <a href="#">Project Name</a>
-                                      </h3>
-                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                                  </div>
-                              </div>
-                              <!-- /.row -->
-
                               <hr>
-
-                              <!-- Pagination -->
-                              <div class="row text-center">
-                                  <div class="col-lg-12">
-                                      <ul class="pagination">
-                                          <li>
-                                              <a href="#">&laquo;</a>
-                                          </li>
-                                          <li class="active">
-                                              <a href="#">1</a>
-                                          </li>
-                                          <li>
-                                              <a href="#">2</a>
-                                          </li>
-                                          <li>
-                                              <a href="#">3</a>
-                                          </li>
-                                          <li>
-                                              <a href="#">4</a>
-                                          </li>
-                                          <li>
-                                              <a href="#">5</a>
-                                          </li>
-                                          <li>
-                                              <a href="#">&raquo;</a>
-                                          </li>
-                                      </ul>
-                                  </div>
-                              </div>
-                              <!-- /.row -->
                           </div>
 
                           
                           <div class='clearfix'></div>
                       </div>
-
-    <!-- Services -->
-    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <!--<section id="services" class="services bg-primary">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <h2>Our Services</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Service Name</strong>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-compass fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Service Name</strong>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Service Name</strong>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Service Name</strong>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
-                            </div>
-                        </div>
-                    </div>-->
-                    <!-- /.row (nested) -->
-                <!--</div>-->
-                <!-- /.col-lg-10 -->
-          <!--  </div>-->
-            <!-- /.row -->
-        <!--</div>-->
-        <!-- /.container -->
-  <!--  </section>-->
-
-    <!-- Callout -->
-<!--    <aside class="callout">
-        <div class="text-vertical-center">
-            <h1>Vertically Centered Text</h1>
-        </div>
-    </aside>-->
-
-    <!-- Portfolio -->
-<!--    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>Our Work</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
-                                </a>
-                            </div>
-                        </div>
-                    </div>-->
-                    <!-- /.row (nested) -->
-                  <!--  <a href="#" class="btn btn-dark">View More Items</a>
-                </div>-->
-                <!-- /.col-lg-10 -->
-          <!--  </div> -->
-            <!-- /.row -->
-      <!--  </div> -->
-        <!-- /.container -->
-  <!--  </section>-->
-
-    <!-- Call to Action -->
-  <!--  <aside class="call-to-action bg-primary">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3>The buttons below are impossible to resist.</h3>
-                    <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
-                </div>
-            </div>
-        </div>
-    </aside>-->
-
-
                 </div>
             </div>
         </div>
@@ -475,10 +206,10 @@
 
     //search funtionality
     $('#query').keyup(function() {
+        $search = $(this).val()
         $request = $.ajax ({
-            url: 'ajax.php',
-            type: 'post',
-            data: {query: $(this).val()},
+            url: 'http://clubfest-1865.rhcloud.com/search.php?query=' + $search,
+            type: 'get',
             dataType: 'json',
             error: function(error) {
                 console.log(error);
@@ -486,19 +217,47 @@
         });
 
         $request.success(function(data) {
-            $info = data;
-            console.log($info['data']);
+            var clubs = data;
+
             //clear results if they exist
             $('#results').empty();
             $('#message').empty();
-            if ($info['message'] != '') {
-                $('#open').show();
-                $('#message').html($info['message']);
+
+            //format the club data into a string
+            $strClubs = "";
+            $message = "";
+
+            if (clubs != null && clubs.length > 0) {
+                $strClubs = "<div class='row' data-row='1'>";
+                for (i = 0; i < clubs.length; i++) {
+
+                    //select a random color for clubs without images
+                    $input = ["ffffff", "ccccff", "ffccff", "b3ffe6", "ffccb3", "ffe066"];
+                    $rand = Math.floor(Math.random() * $input.length);
+
+                    var imgSource = clubs[i].image_url=='' ? "http://dummyimage.com/" + $input[$rand] + "700x400&text=" + clubs[i].name : clubs[i].image_url;
+    
+            //      //create basic club template
+                    $strClubs = $strClubs +
+                        "<div class='col-md-3 portfolio-item' id='club" + clubs[i].id + "'><a href='#club" + clubs[i].id + "'><img class='img-responsive' src='" + imgSource + "'></a><a href='#club" + clubs[i].id + "'><h3>" + clubs[i].name+ "</h3></a></div>";
+
+            //      //create fancybox to show on click 
+                    $strClubs += "<div style='display:none'><div id='club" + clubs[i].id  + "'><div class='row'><div class='col-sm-12' portfolio-item'><img class='img-responsive' src='" + imgSource + "'><h3>" + clubs[i].name + "</h3><p>" + clubs[i].description + "</p></div><div class='col-sm-12'><div class='col-sm-4'><a href='" + clubs[i].website + "'><i class='fa fa-globe' aria-hidden='true'></i></a></div><div class='col-sm-4'><i class='fa fa-envelope' aria-hidden='true'></i>" + clubs[i].listserv_email + "></div><div class='col-sm-4'><a href='" + clubs[i].fb_url + "'><i class='fa fa-facebook-square' aria-hidden='true'></a></i></div><div class='col-sm-4'></div></div></div></div></div>";
+            
+                    //close row 
+                    if ((i+1) % 4 == 0) {
+                        $strClubs += "</div><div class='row' data-row='" + ((i+1)/ 4) + "'>";
+                    }
+                }
+
+                $strClubs += "</div><div class='clearfix'></div><!-- /.clearfix -->";
             } else {
-                $('#open').hide();
-                $('#results').html($info['data']);
-                $('#message').html($info['message']);
-            }
+              $message = '<p>No results found. Please try again.</p>';
+            } 
+              
+            $('#results').html($strClubs);
+            $('#message').html($message);
+          
         });
     });
 

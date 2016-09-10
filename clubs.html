@@ -40,11 +40,11 @@
     <script type="text/javascript" src="js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
 
     <!-- Add fancyBox -->
-    
+
     <script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
     <!-- Optionally add helpers - button, thumbnail and/or media -->
-    
+
     <script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
     <script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
 
@@ -115,7 +115,7 @@
               </div>
               <div class="col-md-6 text-left">
                   <h3>Bartels Hall | Sunday, September 11th, 2016 | 1-4 PM </h3>
-                  <p align="left"> A celebration of Cornell's amazing student groups!
+                  <p class="lead" align="left"> A celebration of Cornell's amazing student groups!
                     Now in its thirteenth year, ClubFest showcases over 300 registered student organizations
                     on campus. The event includes performances by several student groups.
                     Come experience the incredible variety of interests and opportunities available
@@ -177,7 +177,7 @@
                           <hr>
                       </div>
 
-                          
+
                       <div class='clearfix'></div>
                   </div>
               </div>
@@ -218,7 +218,7 @@
         <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
     </footer>
 
-    
+
 
     <!-- Custom Theme JavaScript -->
     <script>
@@ -333,15 +333,15 @@
 
                     var imgSource = clubs[i].image_url=='' ? "http://dummyimage.com/700x400/" + $input[$rand] + "/000/png/&text=" + clubName : clubs[i].image_url;
 
-    
+
             //      //create basic club template
                     $strClubs = $strClubs +
                         "<div class='col-md-3 portfolio-item'><a class='fancybox'  href='#club" + clubs[i].id+ "'><img class='img-responsive' src='" + imgSource + "'></a><a class='fancybox' href='#club" + clubs[i].id + "'><h3>" + clubs[i].name+ "</h3></a></div>";
 
-            //      //create fancybox to show on click 
+            //      //create fancybox to show on click
                     $strClubs += "<div style='display:none'><div id='club" + clubs[i].id  + "'><div class='row addMargin'><div class='col-sm-7 portfolio-item' align='center'><img class='img-responsive' src='" + imgSource + "'></div><div class='col-sm-5' style='text-align:center;'><div class='row'><h3 class='bigTexth3' align='left'>" + clubs[i].name + "</h3><p class='bigText' align='left'>" + clubs[i].description + "</p></div><div class='col-sm-4'><a target='_blank' href='" + clubs[i].website_url + "'><i class='fa fa-globe fa-2x' aria-hidden='true'></i></a></div><div class='col-sm-4'><div class='col-sm-12'><a href='mailto:"+  clubs[i].listserv_email+"'><i class='fa fa-envelope fa-2x' aria-hidden='true'></i></a></div><div class='col-sm-12'>  " + clubs[i].listserv_email + "</div></div><div class='col-sm-4'><a  target='_blank' href='" + clubs[i].fb_url + "'><i class='fa fa-facebook-square fa-2x' aria-hidden='true'></i></a></div></div></div></div></div>";
-            
-                    //close row 
+
+                    //close row
                     if ((i+1) % 4 == 0) {
                         $strClubs += "</div><div class='row' data-row='" + ((i+1)/ 4) + "'>";
                     }
@@ -350,11 +350,11 @@
                 $strClubs += "</div><div class='clearfix'></div><!-- /.clearfix -->";
             } else {
               $message = '<p>No results found. Please try again.</p>';
-            } 
-              
+            }
+
             $('#results').html($strClubs);
             $('#message').html($message);
-          
+
         });
     });
 

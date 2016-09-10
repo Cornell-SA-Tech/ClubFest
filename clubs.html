@@ -325,11 +325,18 @@
                     $input = ["ffffff", "ccccff", "ffccff", "b3ffe6", "ffccb3", "ffe066"];
                     $rand = Math.floor(Math.random() * $input.length);
 
-                    var imgSource = clubs[i].image_url=='' ? "http://dummyimage.com/700x400/" + $input[$rand] + "/000/png/&text=" + clubs[i].name : clubs[i].image_url;
+                    function pad(str, numSpaces) {
+                        return ("+").repeat(numSpaces - 1) + str + ("+").repeat(numSpaces);
+
+                    }
+                    var clubName = (clubs[i].name).length < 15 ? pad(clubs[i].name, Math.round((15 - (clubs[i].name).length)/2)) : clubs[i].name;
+
+                    var imgSource = clubs[i].image_url=='' ? "http://dummyimage.com/700x400/" + $input[$rand] + "/000/png/&text=" + clubName : clubs[i].image_url;
+
     
             //      //create basic club template
                     $strClubs = $strClubs +
-                        "<div class='col-md-3 portfolio-item'><a class='fancybox'  href='#club" + clubs[i].id + "'><img class='img-responsive' src='" + imgSource + "'></a><a class='fancybox' href='#club" + clubs[i].id + "'><h3>" + clubs[i].name+ "</h3></a></div>";
+                        "<div class='col-md-3 portfolio-item'><a class='fancybox'  href='#club" + clubs[i].id+ "'><img class='img-responsive' src='" + imgSource + "'></a><a class='fancybox' href='#club" + clubs[i].id + "'><h3>" + clubs[i].name+ "</h3></a></div>";
 
             //      //create fancybox to show on click 
                     $strClubs += "<div style='display:none'><div id='club" + clubs[i].id  + "'><div class='row addMargin'><div class='col-sm-7 portfolio-item' align='center'><img class='img-responsive' src='" + imgSource + "'></div><div class='col-sm-5' style='text-align:center;'><div class='row'><h3 class='bigTexth3' align='left'>" + clubs[i].name + "</h3><p class='bigText' align='left'>" + clubs[i].description + "</p></div><div class='col-sm-4'><a target='_blank' href='" + clubs[i].website_url + "'><i class='fa fa-globe fa-2x' aria-hidden='true'></i></a></div><div class='col-sm-4'><div class='col-sm-12'><a href='mailto:"+  clubs[i].listserv_email+"'><i class='fa fa-envelope fa-2x' aria-hidden='true'></i></a></div><div class='col-sm-12'>  " + clubs[i].listserv_email + "</div></div><div class='col-sm-4'><a  target='_blank' href='" + clubs[i].fb_url + "'><i class='fa fa-facebook-square fa-2x' aria-hidden='true'></i></a></div></div></div></div></div>";

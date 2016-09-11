@@ -329,7 +329,7 @@
                         return ("+").repeat(numSpaces - 1) + str + ("+").repeat(numSpaces);
 
                     }
-                    var clubName = (clubs[i].name).length < 15 ? pad(clubs[i].name, Math.round((15 - (clubs[i].name).length)/2)) : clubs[i].name;
+                    var clubName = (clubs[i].name).length < 15 ? pad(escape(clubs[i].name), Math.round((15 - (clubs[i].name).length)/2)) : escape(clubs[i].name);
 
                     var imgSource = clubs[i].image_url=='' ? "http://dummyimage.com/700x400/" + $input[$rand] + "/000/png/&text=" + clubName : clubs[i].image_url;
 

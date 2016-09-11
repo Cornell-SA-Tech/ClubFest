@@ -21,6 +21,38 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
+    <!--Searchbar CSS -->
+    <link href="css/searchbar.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+
+    <link rel="stylesheet" href="js/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+
+    <link rel="stylesheet" href="js/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Add mousewheel plugin (this is optional) -->
+    <script type="text/javascript" src="js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+    <!-- Add fancyBox -->
+    
+    <script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    
+    <script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+    <script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+    <!--Font Awesome for logos-->
+    <script src="https://use.fontawesome.com/0e046ac868.js"></script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -31,7 +63,6 @@
 </head>
 
 <body>
-
     <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
     <nav id="sidebar-wrapper">
@@ -62,7 +93,7 @@
         </ul>
     </nav>
 
-    <!-- Header -->
+     <!-- Header -->
     <header id="top" class="header overlay" >
         <div class="text-vertical-center">
             <h1>Cornell ClubFest 2016</h1>
@@ -84,7 +115,7 @@
               </div>
               <div class="col-md-6 text-left">
                   <h3>Bartels Hall | Sunday, September 11th, 2016 | 1-4 PM </h3>
-                  <p class="lead" align="left"> A celebration of Cornell's amazing student groups!
+                  <p align="left"> A celebration of Cornell's amazing student groups!
                     Now in its thirteenth year, ClubFest showcases over 300 registered student organizations
                     on campus. The event includes performances by several student groups.
                     Come experience the incredible variety of interests and opportunities available
@@ -101,13 +132,13 @@
         <!-- /.container -->
     </section>
 
-    <!-- Clubs -->
+    <!-- Clubs-->
    <section id="Clubs" class="clubs">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                   <!-- Page Content -->
-                  <div class="container">
+                   <div class="container">
 
                       <!-- Page Header -->
                       <div class="row">
@@ -119,283 +150,42 @@
                       </div>
                       <!-- /.row -->
 
-                      <!-- Projects Row -->
+                      <!--search bar-->
                       <div class="row">
-                          <div class="col-md-4 portfolio-item">
-                              <a href="#">
-                                  <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-                              </a>
-                              <h3>
-                                  Club Name
-                              </h3>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                          </div>
-                          <div class="col-md-4 portfolio-item">
-                              <a href="#">
-                                  <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-                              </a>
-                              <h3>
-                                  Club Name
-                              </h3>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                          </div>
-                          <div class="col-md-4 portfolio-item">
-                              <a href="#">
-                                  <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-                              </a>
-                              <h3>
-                                  Club Name
-                              </h3>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                          </div>
+                        <div class="container">
+                            <div class="row">
+                                <div id="custom-search-input">
+                                    <div class="input-group col-xs-12">
+                                        <input id='query' type="text" class="  search-query form-control" placeholder="Search" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                       </div>
-                      <!-- /.row -->
 
-                      <!-- Projects Row -->
+
+
+                      <!-- All Projects-->
                       <div class="row">
-                          <div class="col-md-4 portfolio-item">
-                              <a href="#">
-                                  <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-                              </a>
-                              <h3>
-                                  Club Name
-                              </h3>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                          <div id='message'>
+                              <!--fill with ajax results-->
                           </div>
-                          <div class="col-md-4 portfolio-item">
-                              <a href="#">
-                                  <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-                              </a>
-                              <h3>
-                                  Club Name
-                              </h3>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                          <div id='results'>
+                              <!--fill with ajax results-->
                           </div>
-                          <div class="col-md-4 portfolio-item">
-                              <a href="#">
-                                  <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-                              </a>
-                              <h3>
-                                  Club Name
-                              </h3>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                          </div>
+
+                          <hr>
                       </div>
 
-                      <!-- Projects Row -->
-                      <div class="row">
-                          <div class="col-md-4 portfolio-item">
-                              <a href="#">
-                                  <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-                              </a>
-                              <h3>
-                                  Club Name
-                              </h3>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                          </div>
-                          <div class="col-md-4 portfolio-item">
-                              <a href="#">
-                                  <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-                              </a>
-                              <h3>
-                                  Club Name
-                              </h3>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                          </div>
-                          <div class="col-md-4 portfolio-item">
-                              <a href="#">
-                                  <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-                              </a>
-                              <h3>
-                                  Club Name
-                              </h3>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                          </div>
-                      </div>
-                      <!-- /.row -->
-
-                      <hr>
-
-                      <!-- Pagination -->
-                      <div class="row text-center">
-                          <div class="col-lg-12">
-                              <ul class="pagination">
-                                  <li>
-                                      <a href="#">&laquo;</a>
-                                  </li>
-                                  <li class="active">
-                                      <a href="#">1</a>
-                                  </li>
-                                  <li>
-                                      <a href="#">2</a>
-                                  </li>
-                                  <li>
-                                      <a href="#">3</a>
-                                  </li>
-                                  <li>
-                                      <a href="#">4</a>
-                                  </li>
-                                  <li>
-                                      <a href="#">5</a>
-                                  </li>
-                                  <li>
-                                      <a href="#">&raquo;</a>
-                                  </li>
-                              </ul>
-                          </div>
-                      </div>
-                      <!-- /.row -->
-
-    <!-- Services -->
-    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <!--<section id="services" class="services bg-primary">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <h2>Our Services</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Service Name</strong>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-compass fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Service Name</strong>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Service Name</strong>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Service Name</strong>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
-                            </div>
-                        </div>
-                    </div>-->
-                    <!-- /.row (nested) -->
-                <!--</div>-->
-                <!-- /.col-lg-10 -->
-          <!--  </div>-->
-            <!-- /.row -->
-        <!--</div>-->
-        <!-- /.container -->
-  <!--  </section>-->
-
-    <!-- Callout -->
-<!--    <aside class="callout">
-        <div class="text-vertical-center">
-            <h1>Vertically Centered Text</h1>
-        </div>
-    </aside>-->
-
-    <!-- Portfolio -->
-<!--    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>Our Work</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
-                                </a>
-                            </div>
-                        </div>
-                    </div>-->
-                    <!-- /.row (nested) -->
-                  <!--  <a href="#" class="btn btn-dark">View More Items</a>
-                </div>-->
-                <!-- /.col-lg-10 -->
-          <!--  </div> -->
-            <!-- /.row -->
-      <!--  </div> -->
-        <!-- /.container -->
-  <!--  </section>-->
-
-    <!-- Call to Action -->
-  <!--  <aside class="call-to-action bg-primary">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3>The buttons below are impossible to resist.</h3>
-                    <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
-                </div>
+                          
+                      <div class='clearfix'></div>
+                  </div>
+              </div>
             </div>
         </div>
-    </aside>-->
+      </section>
 
-
-                </div>
-            </div>
-        </div>
-
-    <!-- Map -->
-    <section id="contact" class="map">
-        <!--<iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-        -->
-    </section>
-
-    <!-- Footer -->
+      <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
@@ -411,13 +201,13 @@
                     <br>
                     <ul class="list-inline">
                         <li>
-                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                            <a href="https://www.facebook.com/CornellWelcomeWeekend/?hc_location=ufi"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                            <a href="http://orgsync.rso.cornell.edu/org/welcomeweekend/home"><i class="fa fa-globe fa-fw fa-3x"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+                            <a href="cornellsatech@gmail.com"><i class="fa fa-envelope fa-fw fa-3x"></i></a>
                         </li>
                     </ul>
                     <hr class="small">
@@ -428,11 +218,7 @@
         <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
     </footer>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    
 
     <!-- Custom Theme JavaScript -->
     <script>
@@ -506,6 +292,83 @@
         }
         // Enable map zooming with mouse scroll when the user clicks the map
     $('.map').on('click', onMapClickHandler);
+
+
+    //search funtionality
+    $('#query').keyup(function() {
+        $search = $(this).val()
+        $request = $.ajax ({
+            url: 'http://clubfest-1865.rhcloud.com/search.php?query=' + $search,
+            type: 'get',
+            dataType: 'json',
+            error: function(error) {
+                console.log(error);
+            }
+        });
+
+        $request.success(function(data) {
+            var clubs = data;
+
+            //clear results if they exist
+            $('#results').empty();
+            $('#message').empty();
+
+            //format the club data into a string
+            $strClubs = "";
+            $message = "";
+
+            if (clubs != null && clubs.length > 0) {
+                $strClubs = "<div class='row' data-row='1'>";
+                for (i = 0; i < clubs.length; i++) {
+
+                    //select a random color for clubs without images
+                    $input = ["ffffff", "ccccff", "ffccff", "b3ffe6", "ffccb3", "ffe066"];
+                    $rand = Math.floor(Math.random() * $input.length);
+
+                    function pad(str, numSpaces) {
+                        console.log("Padding "+str+" with "+numSpaces);
+                        return ("+").repeat(numSpaces) + str + ("+").repeat(numSpaces);
+
+                    }
+                    clubs[i].name = clubs
+                    var clubName = (clubs[i].name).length < 15 ? pad(clubs[i].name, Math.ceil((14 - (clubs[i].name).length)/2)) : clubs[i].name;
+
+                    var imgSource = clubs[i].image_url=='' ? "http://dummyimage.com/700x400/" + $input[$rand] + "/000/png/&text=" + clubName : clubs[i].image_url;
+
+    
+            //      //create basic club template
+                    $strClubs = $strClubs +
+                        "<div class='col-md-3 portfolio-item'><a class='fancybox'  href='#club" + clubs[i].id+ "'><img class='img-responsive' src='" + imgSource + "'></a><a class='fancybox' href='#club" + clubs[i].id + "'><h3>" + clubs[i].name+ "</h3></a></div>";
+
+            //      //create fancybox to show on click 
+                    $strClubs += "<div style='display:none'><div id='club" + clubs[i].id  + "'><div class='row addMargin'><div class='col-sm-7 portfolio-item' align='center'><img class='img-responsive' src='" + imgSource + "'></div><div class='col-sm-5' style='text-align:center;'><div class='row'><h3 class='bigTexth3' align='left'>" + clubs[i].name + "</h3><p class='bigText' align='left'>" + clubs[i].description + "</p></div><div class='col-sm-4'><a target='_blank' href='" + clubs[i].website_url + "'><i class='fa fa-globe fa-2x' aria-hidden='true'></i></a></div><div class='col-sm-4'><div class='col-sm-12'><a href='mailto:"+  clubs[i].listserv_email+"'><i class='fa fa-envelope fa-2x' aria-hidden='true'></i></a></div><div class='col-sm-12'>  " + clubs[i].listserv_email + "</div></div><div class='col-sm-4'><a  target='_blank' href='" + clubs[i].fb_url + "'><i class='fa fa-facebook-square fa-2x' aria-hidden='true'></i></a></div></div></div></div></div>";
+            
+                    //close row 
+                    if ((i+1) % 4 == 0) {
+                        $strClubs += "</div><div class='row' data-row='" + ((i+1)/ 4) + "'>";
+                    }
+                }
+
+                $strClubs += "</div><div class='clearfix'></div><!-- /.clearfix -->";
+            } else {
+              $message = '<p>No results found. Please try again.</p>';
+            } 
+              
+            $('#results').html($strClubs);
+            $('#message').html($message);
+          
+        });
+    });
+
+    //trigger keyup also on load
+    $(document).ready(function() {
+      $('#query').trigger('keyup');
+    });
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(".fancybox").fancybox();
+      });
     </script>
 
 </body>
